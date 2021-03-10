@@ -1,0 +1,55 @@
+def my_function():
+ print("I love programming")
+my_function()
+#argument (sum)
+def sum(x,y):
+  a=x+y
+  print("The sum is",a)
+sum(10,25)
+sum(123,34)
+sum(55,78)
+sum(2345,56567)
+#argument (division)
+def division(x,y):
+  a=x/y
+  return a
+print(division(1200,6))
+#arbitrary arguments
+def courses(*args):
+  for unit in args:
+    print(unit)
+courses("OOPSAD","OOP2","WEB DEV","FINANCE")
+#keyword argument
+def courses(**kwargs):
+  for key, value in kwargs.items():
+    print("{}:{}".format(key,value))
+courses(First=' OOP2', Second=' OOSAD', Third=' WEB DEV')
+#DEFAULT PARAMETER VALUE
+def sum(x,y):
+  a=x+y
+  print("The sum is ", a)
+sum(355,575)
+sum(47,78)
+sum(4833,597)
+sum(4848,6896)
+
+def kenya(county="Kirinyaga"):
+  print("I am from ",county)
+kenya("Nyeri")
+kenya("Kiambu")
+kenya("Kirinyaga")
+#passing a dict as an argument
+def my_function(resident):
+    print(resident)
+resident={
+"fname":"Kelvin", 
+"lname":"Mwangi", 
+"nationality":"Kenyan",
+}
+my_function(resident)
+#area of a rectangle
+def findArea():
+  AreaOfARectangle=length*width
+lenth=float(input("enter length value:"))
+width=float(input("enter width value:"))
+print(ValueOfLength*ValueOfWidth)
